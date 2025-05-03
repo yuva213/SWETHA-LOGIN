@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Log-In</title>
+  <link rel="icon" href="2.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 flex justify-center items-center h-screen b">
+
+  <div class="bg-white shadow-lg rounded-lg flex max-w-4xl overflow-hidden border-y-4 border-red-600">
+    <!-- Left Side: Image -->
+    <div class="w-1/2 hidden md:block">
+      <img src="2.jpg" alt="Login Illustration" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Right Side: Form -->
+    <div class="w-full md:w-1/2 p-8 ">
+      <h2 class="text-3xl font-bold text-red-600 mb-6 text-center">Admin Log-In </h2>
+      <form id="loginForm" class="space-y-4">
+        <!-- Username Field -->
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-600 mb-1">Username</label>
+          <input type="text" id="username" name="username" required
+            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        </div>
+        <!-- Password Field -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-600 mb-1">Password</label>
+          <input type="password" id="password" name="password" required
+            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        </div>
+        <!-- Login Button -->
+        <button type="button" onclick="handleLogin()"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          Log In
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function handleLogin() {
+      alert('Login Successful! Redirecting to Dashboard...');
+    }
+  </script>
+</body>
+
+</html>
